@@ -1,0 +1,192 @@
+body {
+    /* ke thua cho cac dua con ben trong */
+    text-align: center;
+    font-family: Lato-BoldItalic;
+}
+
+/* @font-face {
+    font-family: Lato-BoldItalic;
+    src: url('../font/Lato/Lato-BoldItalic.ttf');
+} */
+
+/* menu */
+nav{
+    text-align: left;
+}
+
+/* chuyen tu doc sang ngang */
+ul{
+    /* bo cham tron di */
+    list-style: none;
+    display: flex;
+    background-color: rgba(93, 158, 137, 0.411);
+}
+
+ul li a{
+    color: white;
+    /* the a mac dinh co dau gach duoi */
+    text-decoration: none;
+    /* the a mac dinh la inline, khong set duoc padding, margin, withd.. */
+    /* can chuyen thanh inline-block */
+    display: inline-block;
+    padding: 12px 16px;
+    flex-wrap: wrap;
+
+}
+
+ul li:hover a{
+    background-color: cornflowerblue;
+    color: darkkhaki;
+}
+
+/* gom cac hinh anh co cung dinh dang */
+img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid gray;
+    /* chong meo hinh */
+    object-fit: cover;
+    object-position: center;
+}
+
+.info .avatar img {
+    
+    border-radius: 50%;
+    
+}
+/* the h1 co class name nam trong info */
+.info h1.name{
+    color: rgb(132, 223, 140);
+    font-size: 40px;
+}
+.info .position,
+.info .company{
+    margin-bottom: 30px;
+}
+
+.info .company .name{
+    color: rgb(201, 120, 21);
+}
+
+.info .company .description{
+    color: rgb(102, 149, 202);
+    /* chu dam */
+    font-weight: bold;
+}
+
+.info .position .name{
+    color: rgb(219, 61, 180);
+}
+
+.info .position .description{
+    color: rgb(212, 64, 121);
+    /* chu dam */
+    font-weight: bold;
+}
+
+
+.family img{
+    border-radius: 10px;
+}
+
+.row{
+    /* chuyen sang sap xep theo chieu ngang */
+    display: flex;
+    /* the con truc tiep cua row neu khong du cho se xuong dong */
+    /* muc dich la de tranh thanh cuon ngang */
+    /* flex-wrap: wrap */
+    flex-wrap: wrap;
+    /* gian deu theo chieu ngang */
+    justify-content: space-evenly;
+    
+}
+
+figcaption{
+    background-color: black;
+    color: rgb(240, 111, 132);
+}
+
+figure{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 12px 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+/* button co class active */
+button.active{
+    background-color: gray;
+    border-color: grey;
+}
+
+table, th, td{
+    border: 1px solid teal;
+    /* chuyen 2 duong thanh 1 duong */
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+thead{
+    background-color: rgb(58, 195, 236);
+    color: rgb(223, 223, 187);
+}
+
+/* dau: la peseudo class */
+/* even: chan */
+/* doc la: dong chan nam trong tbody thi co dinh dang la */
+tbody tr:nth-child(even){
+    background-color: rgb(160, 158, 158);
+}
+
+/* :hover la peseudo class */
+tbody tr:hover{
+    background-color: rgb(130, 207, 207);
+    color: beige;
+}
+
+/* thong tin lien he */
+.contact{
+    font-size: 18px;
+}
+
+.contact div {
+    margin-bottom: 20px;
+}
+
+.mobile span{
+    color: darkmagenta;
+}
+
+.mobile a{
+    color: rgb(116, 49, 5);
+    font-style: italic;
+}
+
+
+.gaixinh img {
+    float: left;
+    width: unset;
+    margin: 10px;
+}
+.gaixinh{
+    text-align: left;
+}
+
+.gaixinh h2{
+    text-align: center;
+}
+
+/* footer */
+footer{
+    background-color: aqua;
+    padding: 20px 16px;
+    margin-top: 100px;
+}
